@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="titulo">Calculadora</div>
+    <table border="1">
+        <tr>
+            <!--Irá mostrar os resultados e o andamento da conta-->
+            <td colspan="3"><input type="text" id="resultado"></td>
+            <!--Irá limpar a tela da calculadora-->
+            <td><input type="button" value="c" onclick="limpar()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="visor('1')"></td>
+            <td><input type="button" value="2" onclick="visor('2')"></td>
+            <td><input type="button" value="3" onclick="visor('3')"></td>
+            <td><input type="button" value="/" onclick="visor('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="visor('4')"></td>
+            <td><input type="button" value="5" onclick="visor('5')"></td>
+            <td><input type="button" value="6" onclick="visor('6')"></td>
+            <td><input type="button" value="-" onclick="visor('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="visor('7')"></td>
+            <td><input type="button" value="8" onclick="visor('8')"></td>
+            <td><input type="button" value="9" onclick="visor('9')"></td>
+            <td><input type="button" value="+" onclick="visor('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="visor('.')"></td>
+            <td><input type="button" value="0" onclick="visor('0')"></td>
+            <td><input type="button" value="=" onclick="resolver()"></td>
+            <td><input type="button" value="*" onclick="visor('*')"></td>
+        </tr>
+    </table>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
